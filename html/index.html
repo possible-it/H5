@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5融合新闻</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <main class="container">
+        <!-- 滑屏区域 -->
+        <section class="swiperBox"></section>
+        <!-- 音乐区域 -->
+        <section class="musicBox"></section>
+    </main>
+    <script>
+        ~function() {
+            let evt = 'resize';
+            function computed() {
+                let html = document.documentElement;
+                let deviceW = html.clientWidth;
+                let designW = 750;
+                let ratio = deviceW / designW * 100;
+                if (deviceW >= designW) {
+                    ratio = 100;
+                }
+                html.style.fontSize = ratio + 'px';
+               
+            }
+            computed();
+            window.addEventListener(evt, computed);
+        }()
+
+    </script>
+</body>
+</html>
