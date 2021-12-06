@@ -10,9 +10,27 @@
 <body>
     <main class="container">
         <!-- 滑屏区域 -->
-        <section class="swiperBox"></section>
+        <section class="swiperBox">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide page">page</div>
+                    <div class="swiper-slide page1">page1</div>
+                    <div class="swiper-slide page2">page2</div>
+                    <div class="swiper-slide page3">page3</div>
+                    <div class="swiper-slide page4">page4</div>
+                    <div class="swiper-slide page5">page5</div>
+                    <div class="swiper-slide page6">page6</div>
+                </div>
+            </div>
+            
+        </section>
         <!-- 音乐区域 -->
-        <section class="musicBox"></section>
+        <section class="musicBox">
+            <audio src="../media/dj.mp3" preload="auto" loop class="musicAudio"></audio>
+            <a href="javascript:;" id="musicIcon"></a>
+        </section>
+        <!-- 小箭头区域 -->
+        <div class="arrow"></div>
     </main>
     <script>
         ~function() {
@@ -33,5 +51,10 @@
         }()
 
     </script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/touch.js"></script>
+    <script src="../js/event.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
